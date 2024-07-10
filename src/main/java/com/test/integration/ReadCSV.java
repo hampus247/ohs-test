@@ -59,18 +59,6 @@ public class ReadCSV extends UserServiceGrpc.UserServiceImplBase {
         return User.builder().build();
     };
 
-//    private final Function<String, User> mapToItem = (line) -> {
-//
-//        String[] p = line.split(",");// a CSV has comma separated lines
-//
-//        return User.builder().id(Integer.parseInt(p[0])).firstName(p[1]).lastName(p[2])
-//                .email(p[3]).supplierPid(p[4]).creditCardNumber(p[5])
-//                .creditCardType(p[6]).orderId(p[7]).productPid(p[8])
-//                .shippingAddress(p[9]).country(p[10]).dateCreated(p[11])
-//                .quantity(p[12]).fullName(p[13]).orderStatus(p[14]).build();
-//    };
-
-
     public void CreateUser(com.test.grpc.CreateUserRequest request,
                            io.grpc.stub.StreamObserver<com.test.grpc.UserResponse> responseObserver) {
 
